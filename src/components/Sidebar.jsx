@@ -21,7 +21,7 @@ const Sidebar = () => {
     submit(prompt);
   };
   return (
-    <div className="min-h-[100vh] inline-flex flex-col justify-between bg-bgSecondaryColor py-6 px-4">
+    <div className="min-h-[100vh] inline-flex flex-col justify-between bg-bgSecondaryColor py-6 px-14 ">
       <div>
         <Menu
           size={25}
