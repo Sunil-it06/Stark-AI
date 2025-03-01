@@ -67,7 +67,7 @@ import {
 } from "@google/generative-ai";
 import dotenv from "dotenv";
 import path from "path";
-dotenv.config({ path: path.resolve(__dirname, "./src/.env") });
+dotenv.config({ path: path.resolve(__dirname, "/src/.env") });
 
 
 // Load environment variables
