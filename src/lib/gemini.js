@@ -74,7 +74,7 @@ dotenv.config({ path: path.resolve(__dirname, "/src/.env") });
 //dotenv.config();
 //console.log('api', process.env.API_KEY)
 
-const MODEL_NAME = "gemini-1.0-pro";
+const MODEL_NAME = "gemini-2.0-flash";
 const API_KEY = process.env.API_KEY;
  
 
