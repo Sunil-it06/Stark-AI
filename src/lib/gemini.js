@@ -67,7 +67,7 @@ import {
 } from "@google/generative-ai";
 import dotenv from "dotenv";
 import path from "path";
-dotenv.config({ path: path.resolve(__dirname, "../.env") });
+dotenv.config({ path: path.resolve(__dirname, "./src/.env") });
 
 
 // Load environment variables
@@ -75,8 +75,8 @@ dotenv.config({ path: path.resolve(__dirname, "../.env") });
 //console.log('api', process.env.API_KEY)
 
 const MODEL_NAME = "gemini-1.0-pro";
-// const API_KEY = process.env.API_KEY;
- const API_KEY = "AIzaSyBsaJlq_dsl9ASHC2nQDqOBPO0Px9i16qU"
+const API_KEY = process.env.API_KEY;
+ 
 
 // if (!API_KEY) {
 //   throw new Error("Missing API key! Please set KEY in your .env file.");
