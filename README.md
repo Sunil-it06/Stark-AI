@@ -9,8 +9,6 @@ Our Gemini AI clone is a streamlined project management tool designed to enhance
 ## <a name="tech-stack">Tech Stack</a>
 
 - Next.js
-- Primsa
-- Shadcn
 - Tailwind Css
 - Gemini Ai
 
