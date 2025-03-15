@@ -6,7 +6,8 @@ on:
  workflows_dispatch:
 
 permissions:
- contents: write
+  contents: read
+  actions: write
 
 jobs:
    build_and_deploy:
