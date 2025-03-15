@@ -1,0 +1,36 @@
+name: "ci cd for next app"
+
+on:
+ push:
+  branches:[main]
+ workflows_dispatch:
+
+permissions:
+ contents: write
+
+jobs:
+   build_and_deploy:
+     runs-on: ubuntu-latest
+
+     steps:
+      -name: Checkout repository
+      uses: actions/checkout@v3
+
+      -name: setup Node.js
+      uses: actions/setup-node@v3
+      with:
+         node-versions: 18
+
+      -name: Install dependecies
+      run: npm install 
+
+      -name: Build Project
+      run: npm run build
+
+      -name: Deploy to github pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+       branch: gh-pages
+       folder: build
+
+
